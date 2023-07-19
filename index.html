@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav" class="back-col">
+      <div class="title">Aayush</div>
+      <ul class="nav-links">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav" class="back-col">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" class="back-col">
+      <div class="imgContainer">
+        <img src="./assets/profile-pic.png" class="intropic" />
+      </div>
+      <div class="info">
+        <div class="section_text">
+          <p class="section_text_p2">web Designer</p>
+          <p class="section_text_p2">& Developer</p>
+          <div class="btn-container">
+            <button class="btn btn-color-1" onclick="window.open('./assets')">
+              Download Cv
+            </button>
+            <button
+              class="btn btn-color-2"
+              onclick="location.href='./#contact'"
+            >
+              Contact Me
+            </button>
+          </div>
+          <div id="social-containers">
+            <img src="./assets/linkedin (2).png" class="icon" />
+            <img src="./assets/github (1).png" class="icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class=" back-col">
+      <h1 class="skills-title">Skills</h1>
+      <div class="skill-container">
+        <div class="card">
+          <div class="skill1">
+            <img src="./assets/html.png" class="skill-icon" />
+            <h2 class="skill-title">HTML</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="skill2">
+            <img src="./assets/css-3.png" class="skill-icon" />
+            <h2 class="skill-title">CSS</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="skill3">
+            <img src="./assets/javascript.png" class="skill-icon" />
+            <h2 class="skill-title">javascript</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="skill4">
+            <img src="./assets/react.png" class="skill-icon" />
+            <h2 class="skill-title">React</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="skill5">
+            <img src="./assets/java.png" class="skill-icon" />
+            <h2 class="skill-title">java</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="skill6">
+            <img src="./assets/github.png" class="skill-icon" />
+            <h2 class="skill-title">Github</h2>
+          </div>
+        </div>
+      </div>
+      <div class="anim">
+        <div class="anim-text">
+          <div class="anim-text1">
+            <h1 class="an-text1">"Do what you love</h1>
+          </div>
+          <div class="anim-text2">
+            <h1 class="an-text2">Love what you do"</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="showcase" class=" back-col">
+      <h1 class="skills-title">Skills</h1>
+    </section>
+    <script src="three.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
