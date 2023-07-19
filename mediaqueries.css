@@ -6,3 +6,13 @@
         display: flex;
     }
 }
+
+/* @media screen and (max-width:992px){
+    .anim-text1{
+        font-size:70px;
+    }
+    .anim-text2{
+        font-size:70px;
+    }
+
+} */

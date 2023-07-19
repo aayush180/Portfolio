@@ -336,25 +336,36 @@ section{
 }
 
 .anim-text{
-    font-size: 5vw;
+    font-size:100px;
     color:white;
 }
 
 .anim-text1{
+    left:-1650px;
     position: relative;
-    right:1740px;
     background: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 34%, #2BFF88 60%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .anim-text2{
+    right:-1650px;
     position:relative;
-    left:-700px;
     background: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 34%, #2BFF88 60%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+/* showcase */
+.showcase-title{
+    display:flex;
+    justify-content:center;
+    font-size:4vw;
+    color:white;
+}
+
+
 
 
 
