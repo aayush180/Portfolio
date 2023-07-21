@@ -177,15 +177,15 @@ section{
 
 .info{
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 #profile{
     display: flex;
     justify-content:center;
     align-items: center;
-    gap:8rem;
-    height:85vh;
+    gap:10rem;
+    height:86vh;
 }
 
 .imgContainer{
@@ -193,6 +193,64 @@ section{
     width: 400px;
     height:400px;
     align-self: center;
+    padding-left:10px;
+}
+
+/* changes */
+
+.container{
+    width: 450px;
+    color: #FFF;
+    overflow: hidden;
+
+} 
+.container .text{
+    position: relative;
+    color: #4070F4;
+    text-align: center;
+    /* font-size: 30px;
+    font-weight: 600; */
+}
+/* .container .text.first-text{
+    color: #FFF;
+} */
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    /* height: 100%;
+    width: 100%; */
+    /* background-color: #010718; */
+    border-left: 4px solid #4070F4;
+    animation: animate 4s steps(12) infinite;
+}
+
+.text,.first-text,.sec-text{
+  font-size:23px ;
+  color:white;
+
+}
+
+.text.sec-text{
+    background: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 34%, #2BFF88 60%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text.first-text:hover{
+    background: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 34%, #2BFF88 60%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% );
+    }
+    100%{
+        left: 0%;
+    }
 }
 
 .section-text{
@@ -209,7 +267,7 @@ section{
     font-size:1.75rem;
     text-align: center;
     color:white;
-    padding-bottom:0.5rem;
+    padding-bottom:1rem;
 }
 
 .section_text_p2:hover{
@@ -245,6 +303,7 @@ section{
     display: flex;
     justify-content: center;
     gap:1rem;
+    margin-top: 1rem;
 }
 
 .btn{
@@ -312,6 +371,7 @@ section{
 .skill-container{
     display:flex;
     justify-content:space-around;
+    padding-top:10vh;
 }
 
 .skill-icon{
@@ -335,7 +395,7 @@ section{
 }
 
 .anim-text{
-    font-size:100px;
+    font-size: 6vw;
     color:white;
 }
 

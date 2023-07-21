@@ -20,6 +20,19 @@ window.addEventListener("scroll",() =>{
    AnimText2.style.transform = `translateX(${-offSetY * 1.3}px)`
 })
 
-
+const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Coder";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Web Developer";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Frontend Developer";
+            }, 8000); //1s = 1000 milliseconds
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
 
 
