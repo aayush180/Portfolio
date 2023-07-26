@@ -50,9 +50,10 @@ gsap.to(".waterfall",{
     scrollTrigger:{
         trigger:".waterfall",
         scroller:"body",
-        scrub:2
+        scrub:3
     }
 })
+
 
 gsap.from(".nav-links",{
     y:-70,
@@ -74,19 +75,43 @@ gsap.to(".fort-image",{
     scrollTrigger:{
         trigger:".fort-image",
         scroller:"body",
-        scrub:2
+        scrub:3
     }
 })
 
 gsap.to(".beach-image",{
-    y:-280,
+    y:-300,
     duration:1,
     scrollTrigger:{
         trigger:".fort-image",
         scroller:"body",
-        scrub:2
+        scrub:3
     }
 })
+
+gsap.to(".animation-quote h1",{
+    transform: "translateX(-355%)",
+    scrollTrigger:{
+        trigger:".animation-quote ",
+        scroller:"body",
+        start:"top 0",
+        end:"top -200%",
+        scrub:3,
+        pin:true
+    }
+})
+
+gsap.to(".temple-image",{
+    y:-300,
+    duration:1,
+    scrollTrigger:{
+        trigger:".temple-image",
+        scroller:"body",
+        scrub:3
+
+    }
+})
+
 
 
 

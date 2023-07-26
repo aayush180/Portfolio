@@ -375,7 +375,7 @@ section{
     display:flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    padding-top:10vh;
+    padding-top:12vh;
 }
 
 .skill-icon{
@@ -399,7 +399,7 @@ section{
 }
 
 .anim-text{
-    font-size: 6vw;
+    font-size:6vw;
     color:white;
 }
 
@@ -474,12 +474,32 @@ section{
 
 /* showcase3-quote */
 
+#showcase3{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+
 .animation-quote h1{
     color:white;
     font-size:30vw ;
     white-space:nowrap;
     text-transform:capitalize;
+}    
+
+#space-section{
+    height:180vh;
 }
+
+.temple-image{
+    width:40vw;
+    margin-left:50vw;
+    margin-top:-20vh;
+}
+
+
+
 
 
 
