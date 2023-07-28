@@ -1,3 +1,28 @@
+gsap.registerPlugin(ScrollTrigger)
+
+const lenis = new Lenis({
+    wheelMultiplier:1,
+
+})
+
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+
+
 const ImgContainer = document.querySelector(".imgContainer");
 const Info = document.querySelector(".info");
 const AnimText1 = document.querySelector(".anim-text1");
@@ -111,6 +136,11 @@ gsap.to(".temple-image",{
 
     }
 })
+
+
+
+
+
 
 
 
