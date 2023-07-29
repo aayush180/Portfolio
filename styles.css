@@ -541,14 +541,6 @@ projet-section */
      height:100vh;
 }
 
-/* .mac-screen{
-    margin-left: 15vw;
-    margin-top:10vh;
-    height:1100px;
-    width:1300px;
-    position:relative;
- 
-} */
 
 .mac-screen{
 margin-left:2vw;
@@ -558,14 +550,6 @@ height:70vh;
 
 }
 
-.app-image{
-    height:1050px;
-    width:1250px;
-    position:absolute;
-    object-fit: cover;
-}
-
-
 .Project1{
     height:250vh;
     background-color: #000000;
@@ -573,6 +557,22 @@ height:70vh;
 
 }
 
+#loader{
+    height:100vh;
+    width:100vw;
+    background-color: #0c0c0c;
+    position:fixed;
+    z-index:99;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1{
+    color:rgb(231, 233, 235);
+    font-size:5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 

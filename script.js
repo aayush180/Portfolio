@@ -67,7 +67,6 @@ const text = document.querySelector(".sec-text");
 
 
 // gsap
-var tl=gsap.timeline();
 
 gsap.to(".waterfall",{
     y:-400,
@@ -77,21 +76,6 @@ gsap.to(".waterfall",{
         scroller:"body",
         scrub:3
     }
-})
-
-
-gsap.from(".nav-links",{
-    y:-70,
-    duration:2,
-    opacity:0
-
-})
-
-gsap.from(".title",{
-    y:-70,
-    duration:2,
-    opacity:0,
-    
 })
 
 gsap.to(".fort-image",{
@@ -135,6 +119,39 @@ gsap.to(".temple-image",{
         scrub:3
 
     }
+})
+
+
+//loader
+
+function time(){
+    var a=0
+    setInterval(function(){
+        a += Math.floor(Math.random()*15);
+        if(a<100){
+            document.querySelector("#loader h1").innerHTML = a+"%"
+        }
+        else{
+            a=100;
+            document.querySelector("#loader h1").innerHTML = a+"%"
+        }
+       
+    },100)
+}
+
+var tl=gsap.timeline();
+
+
+tl.to("#loader h1",{
+    duration:1,
+    delay:0.5,
+    onStart:time()
+})
+
+tl.to("#loader",{
+    top:"-100%",
+    duration:1,
+    delay:0.5,
 })
 
 
