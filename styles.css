@@ -520,7 +520,9 @@ section{
     margin-top:-20vh;
 }
 /* 
-projet-section */
+projects-section */
+/* project1 */
+
 
 #Projects-Title{
     height:120vh;
@@ -534,6 +536,7 @@ projet-section */
 
 .projects-title{
     font-size:22vw;
+    margin-bottom:20vh;
 }
 
 .project-container{
@@ -541,19 +544,22 @@ projet-section */
      height:100vh;
 }
 
+.back-col2{
+    background-color: gainsboro;
+}
 
-.mac-screen{
-margin-left:2vw;
-margin-top: 20vh;
-width:60vw;
-height:70vh;
+
+.Project1{
+    height:180vh;
+    position:relative;
+    display:flex;
+    flex-direction: column;
 
 }
 
-.Project1{
-    height:250vh;
-    background-color: #000000;
-  
+.mac-monitor{
+    width:65vw;
+    height:110vh;
 
 }
 
@@ -568,11 +574,58 @@ height:70vh;
     justify-content: center;
 }
 
+.monitor{
+    display:flex;
+    height:81vh;
+    width:65vw;
+    margin-left:18vw;
+    margin-top:20vh;
+    position:relative;
+}
+
 #loader h1{
     color:rgb(231, 233, 235);
     font-size:5vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.mac-screen{
+    height:79.3vh;
+    width:64vw;
+    position: absolute;
+    top:1vh;
+    left:0.5vw;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+
+.web-app{
+    width:100%;
+    object-fit:cover;
+}
+.project-title{
+    margin-top:40vh;
+    margin-left:20vw;
+    margin-right:10vw;
+}
+
+.project-title h1{
+    font-size:5vw;
+}
+
+/* project2 */
+
+.Project2{
+    height:150vh;
+}
+
+.laptop-screen{
+    width:70vw;
+    height:70vh;
+    margin-left:15vw;
+}
+
+
 
 
 

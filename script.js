@@ -22,6 +22,12 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('[data-scroll-container]'),
+//     smooth: true
+// });
+
+
 
 const ImgContainer = document.querySelector(".imgContainer");
 const Info = document.querySelector(".info");
@@ -106,7 +112,8 @@ gsap.to(".animation-quote h1",{
         start:"top 0",
         end:"top -200%",
         scrub:3,
-        pin:true
+        pin:true,
+        pinSpacing:false
     }
 })
 
@@ -123,9 +130,8 @@ gsap.to(".temple-image",{
 
 
 //loader
-
 function time(){
-    var a=0
+ var a=0
     setInterval(function(){
         a += Math.floor(Math.random()*15);
         if(a<100){
@@ -138,6 +144,7 @@ function time(){
        
     },100)
 }
+
 
 var tl=gsap.timeline();
 
@@ -156,8 +163,14 @@ tl.to("#loader",{
 
 
 
-
-
+gsap.to("#Projects-Title",{
+    scrollTrigger:{
+        trigger:"#Projects-Title ",
+        scroller:"body",
+        pin:true,
+        pinSpacing:false,
+    }
+})
 
 
 
